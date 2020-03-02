@@ -1,0 +1,28 @@
+{
+  "name": "foodfy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kezily/foodfy.git"
+  },
+  "author": "Kézily Correa Luchini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kezily/foodfy/issues"
+  },
+  "homepage": "https://github.com/Kezily/foodfy#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/register": "^7.8.6",
+    "gulp": "^4.0.2",
+    "gulp-cssbeautify": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1"
+  }
+}
