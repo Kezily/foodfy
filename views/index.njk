@@ -1,0 +1,36 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+    <div class="main-hero">
+        <div class="hero-content">
+            <h1>As melhores receitas</h1>
+            <p>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</p>
+        </div>
+        <div class="hero-image">
+            <img src="images/chef.png" alt="Chef Foodfy">
+        </div>
+    </div>
+
+    <section>
+        <h2>Mais acessadas</h2>
+        <div class="recipes">
+            {% for item in items.slice(3, 9) %}
+                <article id="{{item.id}}" class="recipe-item">
+                    <img src="images/{{item.image}}" alt="{{item.title}}">
+                    <h3>{{item.title}}</h3>
+                    <span>por {{item.author}}</span>
+                </article>
+            {% endfor %}
+        </div>
+
+        {# <div class="modal-overlay">
+            <div class="modal-body">
+                <img src="" alt="">
+                <h4></h4>
+                <span></span>
+                
+                <button class="close">Fechar modal</button>
+            </div>
+        </div> #}
+    </section>
+{% endblock %}
