@@ -3,5 +3,3 @@ node_modules/
 
 # Yarn Things
 yarn.lock 
-
-package-lock.json
