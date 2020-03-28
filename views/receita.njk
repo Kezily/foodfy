@@ -40,15 +40,17 @@
          </ul>
       </div>
 
-      <div class="rec-step rec-information">
-        <div class="title">
-            <h2>Informações adicionais</h2>
-            <button class="show-box">Esconder</button>
-         </div>
+      {% if item.information %}
+         <div class="rec-step rec-information">
+            <div class="title">
+               <h2>Informações adicionais</h2>
+               <button class="show-box">Esconder</button>
+            </div>
 
-         <ul>
-            <li>{{item.information}}</li>
-         </ul>
-      </div>
+            <ul>
+               <li>{{item.information}}</li>
+            </ul>
+         </div>
+      {% endif %}
    </div>
 {% endblock %}
