@@ -9,12 +9,12 @@ gulp.task('sass', compilaSass);
 
 function compilaSass() {
   return gulp
-    .src("assets/scss/**/*.scss")
+    .src("public/assets/scss/style.scss")
     .pipe(sass())
     .pipe(cssbeautify())
-    .pipe(gulp.dest("assets/css"));
+    .pipe(gulp.dest("public/assets/css"));
 }
 
 function watch() {
-  gulp.watch("assets/scss/**/*.scss", compilaSass);
+  gulp.watch("public/assets/scss/*.scss", compilaSass);
 }

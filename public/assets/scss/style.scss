@@ -171,6 +171,53 @@ h2,
   }
 }
 
+/* SINGLE - RECIPE */
+
+.single header {
+  margin-bottom: 50px;
+  text-align: center;
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    border-radius: 15px;
+  }
+  h1 {
+    margin-bottom: 5px;
+    font-size: 34px;
+  }
+  .author {
+    color: #777;
+    font-size: 20px;
+  }
+}
+
+.rec-step {
+  margin-bottom: 50px;
+  ul {
+    padding-left: 20px;
+  }
+  ul.hide {
+    display: none;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    h2 {
+      margin: 0;
+    }
+    button {
+      margin-left: 10px;
+      background: transparent;
+      color: #999;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      cursor: pointer;
+    }    
+  }
+}
 /* MODAL */
 
 .modal-overlay {
