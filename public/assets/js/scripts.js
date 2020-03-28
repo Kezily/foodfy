@@ -1,10 +1,19 @@
-const recipes = document.querySelectorAll('.recipe-item')
+const recipes = document.querySelectorAll('.recipe-item');
 
 for(let recipe of recipes){
    recipe.addEventListener('click', function(){
     const recipeID = recipe.getAttribute('id')
     window.location.href = `/receita?id=${recipeID}`;
   })
+}
+
+const buttons = document.querySelectorAll('.show-box');
+
+for(let button of buttons){
+   button.addEventListener('click', function(){
+      button.parentNode.nextElementSibling.classList.toggle("hide");
+      button.textContent == 'Esconder' ? button.textContent = 'Mostrar' : button.textContent = 'Esconder';
+   });
 }
 
 // const modalOverlay = document.querySelector('.modal-overlay');

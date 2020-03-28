@@ -5,12 +5,50 @@
 {% endblock %}
 
 {% block content %}
-   <div class="content">
-      <img src="images/{{item.image}}" alt="{{item.title}}">
+   <div class="single">
+      <header>
+         <img src="images/{{item.image}}" alt="{{item.title}}">
 
-      <h1>{{item.title}}</h1>
-      <small>Por {{item.author}}</small>
+         <h1>{{item.title}}</h1>
+         <span class="author">Por {{item.author}}</span>
+      </header>
       
-      <p>Suspendisse placerat neque neque. Morbi dictum nulla non sapien rhoncus, et mattis erat commodo. Aliquam vel lacus a justo mollis luctus. Proin vel auctor eros, sed eleifend nunc. Curabitur eget tincidunt risus. Mauris malesuada facilisis magna, vitae volutpat sapien tristique eu. Morbi metus nunc, interdum in erat placerat, aliquam iaculis massa. Duis vulputate varius justo pharetra maximus. In vehicula enim nec nibh porta tincidunt. Vestibulum at ultrices turpis, non dictum metus. Vivamus ligula ex, semper vitae eros ut, euismod convallis augue.</p>
+      <div class="rec-step rec-ingredients">
+         <div class="title">
+            <h2>Ingredientes</h2>
+            <button class="show-box">Esconder</button>
+         </div>
+
+        <ul>
+         {% for item in item.ingredients %}
+            <li>{{ item }}</li>
+         {% endfor %}
+        </ul>
+
+      </div>
+
+      <div class="rec-step rec-preparation">
+         <div class="title">
+            <h2>Modo de preparo</h2>
+            <button class="show-box">Esconder</button>
+         </div>
+
+         <ul>
+            {% for item in item.preparation %}
+               <li>{{ item }}</li>
+            {% endfor %}
+         </ul>
+      </div>
+
+      <div class="rec-step rec-information">
+        <div class="title">
+            <h2>Informações adicionais</h2>
+            <button class="show-box">Esconder</button>
+         </div>
+
+         <ul>
+            <li>{{item.information}}</li>
+         </ul>
+      </div>
    </div>
 {% endblock %}

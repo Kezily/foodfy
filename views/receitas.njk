@@ -7,7 +7,7 @@
 {% block content %}
     <div class="recipes">
         {% for item in items %}
-            <article class="recipe-item">
+            <article id="{{item.id}}" class="recipe-item">
                 <img src="images/{{item.image}}" alt="{{item.title}}">
                 <h3>{{item.title}}</h3>
                 <span>por {{item.author}}</span>

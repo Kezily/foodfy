@@ -175,7 +175,62 @@ h2,
     line-height: 24px;
 }
 
+/* SINGLE - RECIPE */
+
+.single header {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.single header img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    border-radius: 15px;
+}
+
+.single header h1 {
+    margin-bottom: 5px;
+    font-size: 38px;
+}
+
+.single header .author {
+    color: #777;
+    font-size: 20px;
+}
+
+.rec-step {
+    margin-bottom: 50px;
+}
+
+.rec-step ul {
+    padding-left: 20px;
+}
+
+.rec-step ul.hide {
+    display: none;
+}
+
+.rec-step .title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.rec-step .title h2 {
+    margin: 0;
+}
+.rec-step .title button {
+    margin-left: 10px;
+    background: transparent;
+    color: #999;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 /* MODAL */
+
 .modal-overlay {
     width: 100%;
     height: 100%;
