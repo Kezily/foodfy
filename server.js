@@ -33,7 +33,7 @@ server.get('/receita', function(req, res) {
    });
 
    if(!recipe) {
-      return res.send("Receita não encontrada");
+      return res.render("404", { items : data });
    }
 
    return res.render("receita", { item : recipe });
